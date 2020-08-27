@@ -1,5 +1,5 @@
 /*
-
+Every number in the range of the random() function has an equal probability of ocurring.
 */
 import java.util.ArrayList;
 class RandomWalker{
