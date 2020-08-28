@@ -32,12 +32,17 @@ float t=0;
 void setup(){
   size(1920,1080);
   //frameRate(10);
+  background(0);
 }
 void draw(){
   //background(0);
   fill(200,0,0);
   float xPos = map(noise(t),0,1,0,width);
   float yPos = map(noise(t,t),0,1,0,height);
+  //float xPos = map(random(0,1),0,1,0,width); comment the above two 
+lines and uncomment these two to get the generic random version
+  //float yPos = map(random(0,1),0,1,0,height);
+  
   ellipse(xPos,yPos,80,80);
   t+=0.01;
 }
